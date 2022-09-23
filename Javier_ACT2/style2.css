@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(anime.jpg) no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.container{
+  width: 45%;
+  background: hsla(0, 74%, 24%, 0.534);
+  padding: 40px;
+  text-align: center;
+  margin:auto;
+  margin-top: 8%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.container-img{
+  border-radius: 50%;
+  width: 200PX;
+  height: 200PX;
+}
+.container h1{
+  font-size: 40px;
+  varter-spacing: 4px;
+  font-weight: 100;
+}
+.container h5{
+  font-size: 20px;
+  varter-spacing: 3px;
+  font-weight: 100;
+  text-align: center;
+}
+.container p{
+  text-align: center;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.container li{
+    display: inline-block;
+    margin: 12px;
+    list-style: none;
+}
+.container li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: .3s;
+}
+.container li a:hover{
+  border-bottom: 2px solid orange;
+}
+.icon{
+    width: 50 px;
+    height: 50px;
+    border-radius: 10px;
+}
