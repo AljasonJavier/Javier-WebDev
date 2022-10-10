@@ -17,7 +17,9 @@
 </head>
 
 <body>
+  <a href="myWeb.html"><img src="download.png" class="icon"></a>
   <div class="position-absolute top-50 start-50 translate-middle">
+  <h1 style="color:White ;">Student Class List</h1>
     <div class="container" id="list">
       <div class="text-end">
         <button type="button" class="btn btn-primary btn-lg " onclick="addPeople()">ADD Student</button>
@@ -39,14 +41,18 @@
         <div class="card text-start">
           <br>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">First Name</span>
+            <span class="input-group-text" id="inputGroup-sizing-default">First
+              Name</span>
             <input type="text" class="form-control" id="firstname" aria-label="Sizing example input"
-             aria-describedby="inputGroup-sizing-default" placeholder="First Name">
+              aria-describedby="inputGroup-sizing-default" placeholder="First
+                Name">
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
+            <span class="input-group-text" id="inputGroup-sizing-default">Last
+              Name</span>
             <input type="text" class="form-control" id="lastname" aria-label="Sizing example input"
-             aria-describedby="inputGroup-sizing-default" placeholder="Last Name">
+              aria-describedby="inputGroup-sizing-default" placeholder="Last
+                Name">
           </div>
           <div class="text-end">
             <button id="cancel-add-btn" class="btn btn-danger" onclick="hideInput()">Cancel</button>
@@ -76,12 +82,11 @@
         }
         input.style.display = "none";
         list.style.display = "block";
-        let li = document.createElement('li');
+        let li = document.createElement("li");
         li.className = 'list-group-item';
         li.appendChild(document.createTextNode(firstname + ' ' + lastname));
         listPeople.appendChild(li);
 
-        return false;
       }
       function hideInput() {
         list.style.display = "block";
