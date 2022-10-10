@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <a href="myWeb.html"><img src="download.png" class="icon"></a>
+  <a href="myWeb.html"><img src="download.png" width =50xp class="icon"></a>
   <div class="position-absolute top-50 start-50 translate-middle">
   <h1 style="color:White ;">Student Class List</h1>
     <div class="container" id="list">
@@ -55,9 +55,9 @@
                 Name">
           </div>
           <div class="text-end">
-            <button id="cancel-add-btn" class="btn btn-danger" onclick="hideInput()">Cancel</button>
+            <button id="cancel-add-btn" class="btn btn-danger" onclick="cancel()">Cancel</button>
 
-            <button id="save-btn" class="btn btn-primary" onclick="saveInfo()">Save</button>
+            <button id="save-btn" class="btn btn-primary" onclick="save()">Save</button>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
         list.style.display = "none";
         input.style.display = "block";
       }
-      function saveInfo() {
+      function save() {
         let firstname = document.querySelector('#firstname').value;
         let lastname = document.querySelector('#lastname').value;
         if (!firstname || !lastname) {
@@ -88,7 +88,7 @@
         listPeople.appendChild(li);
 
       }
-      function hideInput() {
+      function cancel() {
         list.style.display = "block";
         input.style.display = "none";
       }
